@@ -11,3 +11,22 @@ for (let age = 30; age < 40; age++) {
   }
 
   wrapGifts(gifts);
+
+const name=["Guadalupe", "Ollie", "Aki" ];
+const surprise="for the wonderful surprise gift!";
+function writeCards(name){
+  let messageArray=[];
+  for ( let i=0; i<name.length; i++){
+    let message=`Thank you, ${name[i]}, ${surprise}`
+    messageArray.push(message);
+  }
+  return messageArray;
+}
+
+function countDown(){
+  let num=10;
+  while (num>=0){
+    console.log(num);
+    num--;
+  }
+}
